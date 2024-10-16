@@ -3,23 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4063BFFD2C9E382400B62605 /* SwiftUiWeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063BFFC2C9E382400B62605 /* SwiftUiWeatherApp.swift */; };
-		4063BFFF2C9E382400B62605 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063BFFE2C9E382400B62605 /* ContentView.swift */; };
-		4063C0012C9E382600B62605 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4063C0002C9E382600B62605 /* Assets.xcassets */; };
 		4063C0042C9E382600B62605 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4063C0032C9E382600B62605 /* Preview Assets.xcassets */; };
+		4063C00B2C9E5DB100B62605 /* FrameworkGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063C00A2C9E5DB100B62605 /* FrameworkGridView.swift */; };
+		4063C00D2C9E653500B62605 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063C00C2C9E653500B62605 /* FrameworkDetailView.swift */; };
+		4063C00F2C9E684E00B62605 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063C00E2C9E684E00B62605 /* FrameworkGridViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4063BFF92C9E382400B62605 /* SwiftUiWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUiWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4063BFFC2C9E382400B62605 /* SwiftUiWeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUiWeatherApp.swift; sourceTree = "<group>"; };
-		4063BFFE2C9E382400B62605 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		4063C0002C9E382600B62605 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4063C0032C9E382600B62605 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4063C00A2C9E5DB100B62605 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
+		4063C00C2C9E653500B62605 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
+		4063C00E2C9E684E00B62605 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		40E482272CBE0E7C004BCB19 /* Domain */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Domain; sourceTree = "<group>"; };
+		40E482322CBE18A1004BCB19 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
+		40E482392CBE1C47004BCB19 /* App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = App; sourceTree = "<group>"; };
+		40E482A12CBF59AD004BCB19 /* Scenes */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Scenes; sourceTree = "<group>"; };
+		40E482B02CBF59D6004BCB19 /* Resources */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Resources; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4063BFF62C9E382400B62605 /* Frameworks */ = {
@@ -51,10 +59,13 @@
 		4063BFFB2C9E382400B62605 /* SwiftUiWeather */ = {
 			isa = PBXGroup;
 			children = (
-				4063BFFC2C9E382400B62605 /* SwiftUiWeatherApp.swift */,
-				4063BFFE2C9E382400B62605 /* ContentView.swift */,
-				4063C0002C9E382600B62605 /* Assets.xcassets */,
+				40E482392CBE1C47004BCB19 /* App */,
+				40E482272CBE0E7C004BCB19 /* Domain */,
+				4063C0132C9E7C4200B62605 /* Framework */,
 				4063C0022C9E382600B62605 /* Preview Content */,
+				40E482B02CBF59D6004BCB19 /* Resources */,
+				40E482A12CBF59AD004BCB19 /* Scenes */,
+				40E482322CBE18A1004BCB19 /* Services */,
 			);
 			path = SwiftUiWeather;
 			sourceTree = "<group>";
@@ -65,6 +76,16 @@
 				4063C0032C9E382600B62605 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4063C0132C9E7C4200B62605 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				4063C00A2C9E5DB100B62605 /* FrameworkGridView.swift */,
+				4063C00E2C9E684E00B62605 /* FrameworkGridViewModel.swift */,
+				4063C00C2C9E653500B62605 /* FrameworkDetailView.swift */,
+			);
+			path = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +102,13 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				40E482272CBE0E7C004BCB19 /* Domain */,
+				40E482322CBE18A1004BCB19 /* Services */,
+				40E482392CBE1C47004BCB19 /* App */,
+				40E482A12CBF59AD004BCB19 /* Scenes */,
+				40E482B02CBF59D6004BCB19 /* Resources */,
 			);
 			name = SwiftUiWeather;
 			productName = SwiftUiWeather;
@@ -126,7 +154,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4063C0042C9E382600B62605 /* Preview Assets.xcassets in Resources */,
-				4063C0012C9E382600B62605 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4063BFFF2C9E382400B62605 /* ContentView.swift in Sources */,
-				4063BFFD2C9E382400B62605 /* SwiftUiWeatherApp.swift in Sources */,
+				4063C00D2C9E653500B62605 /* FrameworkDetailView.swift in Sources */,
+				4063C00B2C9E5DB100B62605 /* FrameworkGridView.swift in Sources */,
+				4063C00F2C9E684E00B62605 /* FrameworkGridViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -280,6 +308,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +338,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
